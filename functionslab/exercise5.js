@@ -2,7 +2,6 @@
 fetch("https://jsonplaceholder.typicode.com/todos")
     .then(response => response.json())
     .then(todos => {
-
         const todosCompletedByUser = todos.reduce((acc, todo) => {
             todo.completed
                 ? acc
